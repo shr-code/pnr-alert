@@ -464,7 +464,7 @@ budget) decides whether to call the API, so extra wake-ups cost **no API quota**
 3. **Cronjobs**, **Create cronjob**.
 4. **Common** tab:
    - **Title:** `pnr-alert`
-   - **URL:** `https://api.github.com/repos/shr-coditas/pnr-alert/actions/workflows/pnr-alert.yml/dispatches`
+   - **URL:** `https://api.github.com/repos/shr-code/pnr-alert/actions/workflows/pnr-alert.yml/dispatches`
    - **Execution schedule:** every 10 minutes.
    - Turn on **Notify me when the execution of the cronjob fails**.
 5. **Advanced** tab:
@@ -493,7 +493,7 @@ curl -i -X POST \
   -H "Authorization: Bearer YOUR_TOKEN" \
   -H "Accept: application/vnd.github+json" \
   -d '{"ref":"main"}' \
-  https://api.github.com/repos/shr-coditas/pnr-alert/actions/workflows/pnr-alert.yml/dispatches
+  https://api.github.com/repos/shr-code/pnr-alert/actions/workflows/pnr-alert.yml/dispatches
 ```
 
 > **Note:** the URL is a POST-only API endpoint. Opening it in a browser always shows "Not Found"; that is
